@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+
+
+
+
+/* header */
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: aqua;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#logo {
+    float: left;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#nav {
+    float: right;
+    margin-top: 5px;
+    display: block;
+}
+
+#nav > li {
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+}
+
+
+
+/* body */
+#section{
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    display: flex;
+}
+
+.sidebar{
+    width: 250px;
+    background-color: rgb(242, 242, 250);
+    height: inherit;
+    padding: 20px;
+    
+}
+
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.search-form > input{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border:  2px solid rgb(222, 222, 218);
+    padding: 12px 20px;
+    margin: 10px;
+}
+
+.btn-search{
+    padding: 10px 10px;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px #999;  
+}
+
+
+/* product */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 5px;
+}
+
+.product {
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.product > img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-content {
+    margin: 15px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 50px;
+}
+
+.product-price {
+    color: red;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+/* footer */
+#footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:#d3d3d3;
+    padding: 15px;
+}
