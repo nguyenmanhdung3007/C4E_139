@@ -136,22 +136,46 @@ let number = parseInt(prompt("Hãy nhập 1 số: "));
 
 if (number < 2) {
     console.log("Không có số nguyên tố nào cả!")
-} else if (number>2) {
+} else if (number>=2) {
+
+    console.log("Các số nguyên tố từ 1 đến " + number + " là: ");
     for (let index1 = 2; index1 <= number; index1++) {
+        let boolean = true;
         for (let index2 = 2; index2 < index1 ; index2++) {
-            let sum = 0;
-            if(index1%index2 === 0) {
-                sum = sum + 1;
-                console.log(sum);
-                continue;
-                console.log(index1);
-            };
+            if (index1%index2 === 0) {
+                boolean = false;
+                break;
+            }
+            
+        }
+        if (boolean===true) {
+            console.log(index1);
+            console.log(boolean);
         }
         
     }
-} else {
-    console.log(number);
-}
+} 
+// else {
+//     console.log("Các số nguyên tố từ 1 đến " + number + " là: " + number);
+
+// }
+
+// let a = parseInt(prompt("Nhập số a:"));
+
+// console.log("Các số nguyên tố từ 1 đến " + a + " là:");
+// for (let number = 2; number <= a; number++) {
+//   let isPrime = true;
+//   for (let i = 2; i < number; i++) {
+//     if (number % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if (isPrime) {
+//     console.log(number);
+//   }
+// }
+
 
 
 
