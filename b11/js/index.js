@@ -46,6 +46,7 @@ console.log(btnClear);
 
 btnClear.onclick = function () {
     textResult.innerText = "0";
+    displayText = "";
     operatorEntered = false;
 }
 
